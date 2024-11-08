@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "prettier"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off" // Disable this rule
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the React version
+    }
+  }
 }
